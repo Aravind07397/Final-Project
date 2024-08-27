@@ -11,28 +11,28 @@ Exploratory Data Analysis (EDA): Visualize the dataset through various graphs an
 Model Evaluation: Provides a detailed classification report, including precision, recall, F1-score, and accuracy.
 Scalable Deployment: Ready for deployment on platforms like Render or Heroku.
 Tech Stack
-# Python: Core programming language used for model building and backend.
-# Streamlit: Framework for developing the web-based interface.
-# Scikit-learn: Machine learning library for model training and evaluation.
-# Pandas & NumPy: Data manipulation and analysis.
-# Matplotlib & Seaborn: Libraries for data visualization.
-# Pickle: For saving and loading the machine learning model and scaler.
+Python: Core programming language used for model building and backend.
+Streamlit: Framework for developing the web-based interface.
+Scikit-learn: Machine learning library for model training and evaluation.
+Pandas & NumPy: Data manipulation and analysis.
+Matplotlib & Seaborn: Libraries for data visualization.
+Pickle: For saving and loading the machine learning model and scaler.
 Setup Instructions
 Clone the Repository:
 
-bash
+# bash
 Copy code
 git clone https://github.com/yourusername/bank-risk-controller-system.git
 cd bank-risk-controller-system
 Create a Virtual Environment:
 
-bash
+# bash
 Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 Install Dependencies:
 
-bash
+# bash
 Copy code
 pip install -r requirements.txt
 Download the Dataset:
@@ -40,12 +40,12 @@ Download the Dataset:
 Place the dataset (Bank_dataset.csv) in the project's root directory.
 Train the Model and Save Scaler (if not using the pre-trained model):
 
-bash
+# bash
 Copy code
 python train_model.py
 Run the Application:
 
-bash
+# bash
 Copy code
 streamlit run app.py
 Usage
@@ -55,7 +55,7 @@ Model Evaluation: View the performance of the model through the classification r
 Model Details
 Algorithm: Decision Tree Classifier
 
-Input Features:
+# Input Features:
 
 NAME_CONTRACT_TYPE_x
 CODE_GENDER
@@ -67,7 +67,7 @@ DAYS_BIRTH
 DAYS_EMPLOYED
 OCCUPATION_TYPE
 EXT_SOURCE_2
-Performance Metrics:
+# Performance Metrics:
 
 Accuracy: 99.15%
 Precision: 1.00 (Class 0), 0.95 (Class 1)
@@ -81,13 +81,12 @@ Target: Loan Default (0 = No Default, 1 = Default)
 Scalability and Deployment
 The application is designed to be easily deployable on cloud platforms like Render, Heroku, or AWS. The web-based interface ensures that the system can be accessed from any device, providing scalability for organizations of different sizes.
 
-Contributing
+# Contributing
 We welcome contributions to enhance the Bank Risk Controller System. To contribute:
 
-Fork the repository.
+# Fork the repository.
 Create a new branch (git checkout -b feature-branch).
 Commit your changes (git commit -m 'Add some feature').
 Push to the branch (git push origin feature-branch).
 Create a pull request.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
