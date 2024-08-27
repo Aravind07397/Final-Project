@@ -89,4 +89,50 @@ Create a new branch (git checkout -b feature-branch).
 Commit your changes (git commit -m 'Add some feature').
 Push to the branch (git push origin feature-branch).
 Create a pull request.
+-------------------------------------------------------------------------------------------------------------------------------------------------*------------------------------------------------------------------
 
+# Restaurant Review Sentiment Analysis
+This project is a Streamlit-based web application that predicts the sentiment of restaurant reviews. The sentiment analysis model is trained on a dataset of restaurant reviews and can classify the sentiment as Positive, Neutral, or Negative.
+
+# Project Structure
+app.py: The main file for the Streamlit application.
+sentiment_model.pkl: The trained Logistic Regression model for sentiment analysis.
+tfidf_vectorizer.pkl: The TF-IDF vectorizer used to transform text data into numerical form.
+Restaurant reviews.csv: The dataset used for training the model (not included in this repository).
+README.md: This file.
+# Features
+Text Input: Users can input a restaurant review into the application.
+Sentiment Prediction: The application predicts the sentiment of the entered review as Positive, Neutral, or Negative.
+Sample Data Display: Optionally, users can view a sample of the dataset used to train the model.
+# Installation
+Clone the repository:
+
+git clone https://github.com/yourusername/restaurant-review-sentiment-analysis.git
+cd restaurant-review-sentiment-analysis
+Install the required packages:
+
+pip install -r requirements.txt
+Run the Streamlit application:
+
+streamlit run app.py
+Dataset
+The dataset used for this project contains restaurant reviews, ratings, and other metadata. The sentiment labels were created based on the ratings:
+
+Ratings 4-5: Positive
+Rating 3: Neutral
+Ratings 1-2: Negative
+# Model
+The sentiment analysis model is a Logistic Regression classifier trained on TF-IDF vectorized text data. The model was trained using the Scikit-learn library.
+
+# How to Use
+Run the Streamlit application using the command:
+
+streamlit run app.py
+Enter a restaurant review in the provided text area.
+
+Click on "Predict Sentiment" to see the predicted sentiment.
+
+Optionally, check the "Show Sample Data" box to view the first few rows of the dataset.
+
+# Deployment
+You can deploy this application to any cloud platform that supports Python and Streamlit, such as Render, Heroku, or Streamlit Sharing.
